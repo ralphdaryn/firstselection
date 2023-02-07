@@ -99,7 +99,7 @@
     z-index: 1;
   }
 
-  .nav__links {
+  .nav-container {
     background-color: rgba(233, 241, 250, 0.95);
     position: absolute;
     top: 0;
@@ -111,8 +111,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 5rem;
     transition: all .8s ease-in;
     
 
@@ -126,7 +124,11 @@
     visibility: hidden;
 
   }
-  .nav-open .nav__links {
+  .nav__links {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .nav-open .nav-container {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -138,6 +140,7 @@
   .nav-open .fa-bars {
     display: none;
   }
+ 
   .nav__link:link, .nav__link:visited {
     font-size: 3rem;
   }

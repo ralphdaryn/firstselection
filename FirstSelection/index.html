@@ -27,11 +27,11 @@
     <title>First Selection | We bring auto repair to you</title>
   </head>
   <body>
-    <header class="header nav-open">
+    <header class="header">
       <!-- Navigation Bar -->
       <nav class="nav">
         <a href ="#"><img src="img/fslogo.png" alt="fslogo" class="nav__logo" id="logo" ></a>
-        <nav class="container">
+        <nav class="nav-container">
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">About Us</a>
@@ -51,7 +51,7 @@
       </nav>
 
           <!-- Mobile Navigation -->
-          <button class="btn-mobile-nav" type="button" >
+          <button class="btn-mobile-nav">
             <i class="fa-solid fa-bars fa-2x"></i>
             <i class="fa-solid fa-xmark fa-2x"></i>
           </button>
@@ -68,7 +68,7 @@
           <span class="highlight">Your Home</span>
         </h1>
         <h4>Redefine the service for your car.</h4>
-        <button type="button" class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
         <img src="/img/hero1.jpg" class="header__img" alt="hero1" />
       </div>
 
@@ -326,16 +326,13 @@
 
       <div class="operations">
         <div class="operations__tab-container">
-          <button type="button"
-            class="btn operations__tab operations__tab--1 operations__tab--active"
-            data-tab="1"
-          >
+          <button class="btn operations__tab operations__tab--1 operations__tab--active" data tab="1">
             <span>01</span>Book an Appointment
           </button>
-          <button type="button" class="btn operations__tab operations__tab--2" data-tab="2">
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
             <span>02</span>Mechanic Will Arrive With Equipment
           </button>
-          <button type="button" class="btn operations__tab operations__tab--3" data-tab="3">
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
             <span>03</span>Money Back Gurantee!
           </button>
         </div>
@@ -543,8 +540,8 @@
           </div>
         </div>
 
-        <button type="button" class="slider__btn slider__btn--left">&larr;</button>
-        <button type="button" class="slider__btn slider__btn--right">&rarr;</button>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
         <div class="dots"></div>
       </div>
     </section>
@@ -556,7 +553,7 @@
           Taking care of cars and the people who drive them.
         </h3>
       </div>
-      <button type="button" class="btn btn--show-modal">Book An Appointment Today!</button>
+      <button class="btn btn--show-modal">Book An Appointment Today!</button>
     </section>
 
     <!-- Footer Section -->
@@ -592,7 +589,7 @@
 
     <!-- Modal Window -->
     <div class="modal hidden">
-      <button type="button" class="btn--close-modal">&times;</button>
+      <button class="btn--close-modal">&times;</button>
       <h2 class="modal__header">
         Book An Appointment In<br />
         Less Than
@@ -605,7 +602,7 @@
         <input type="text" />
         <label>Email Address</label>
         <input type="email" />
-        <button type="button" class="btn">Next step &rarr;</button>
+        <button class="btn">Next step &rarr;</button>
       </form>
     </div>
     <div class="overlay hidden"></div>
