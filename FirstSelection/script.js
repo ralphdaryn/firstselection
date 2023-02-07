@@ -56,7 +56,7 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
 
   if (e.target.classList.contains("nav__link")) {
-    const id = e.target.getAttribute("href");
+    const id = e.target.getAttribute("a");
     document.querySelector(id).scrollIntoView({
       behavior: "smooth",
     });
@@ -83,7 +83,6 @@ tabsContainer.addEventListener("click", function (e) {
   clicked.classList.add("operations__tab--active");
 
   // Activate content area
-  console.log(clicked.dataset.tab);
   document
     .querySelector(`.operations__content--${clicked.dataset.tab}`)
     .classList.add("operations__content--active");
@@ -163,7 +162,6 @@ const imgTargets = document.querySelectorAll("img[data-src]");
 
 const loadImg = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
 
@@ -194,8 +192,8 @@ const dotContainer = document.querySelector(".dots");
 let curSlide = 0;
 const maxSlide = slides.length;
 
-const createDots = function () {
-  slides.forEach(function (_, i) {
+const createDots = function() {
+  slides.forEach(function(_, i) {
     dotContainer.insertAdjacentHTML(
       "beforeend",
       `<button class="dots__dot" data-slide="${i}"></button>`
@@ -249,7 +247,6 @@ btnLeft.addEventListener("click", prevSlide);
 
 // Left & Right Arrow Keydown
 document.addEventListener("keydown", function (e) {
-  console.log(e);
   if (e.key === "ArrowLeft") prevSlide();
   e.key === "ArrowRight" && nextSlide();
 });
@@ -260,4 +257,40 @@ dotContainer.addEventListener("click", function (e) {
     goToSlide(slide);
     activateDot(curSlide);
   }
+});
+
+// Mobile Navigation
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+// Toggle Navigation Menu
+btnNavEl.addEventListener('click', function() {
+  headerEl.classList.toggle('nav-open')
+})
+
+// Smooth Scroll Animation
+const allLinks = document.querySelectorAll("a");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    // Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close mobile navigation
+    if (link.classList.contains("nav__link"))
+      headerEl.classList.toggle("nav-open");
+  });
 });

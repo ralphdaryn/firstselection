@@ -22,6 +22,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   color: #4c495d;
   line-height: 1.9;
   background-color: #e9f1fa;
+  overflow-x: hidden;
 }
 
 /* GENERAL ELEMENTS */
@@ -79,6 +81,7 @@ body {
 
 .btn:hover {
   background-color: var(--color-primary-darker);
+  cursor: pointer;
 }
 
 .btn--text {
@@ -94,6 +97,11 @@ body {
   padding-bottom: 2px;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+.btn--text:hover {
+  color: var(--color-primary-darker);
+  cursor: pointer;
 }
 
 p {
@@ -113,6 +121,19 @@ img {
   filter: blur(20px);
 }
 
+/* Mobile Navigation */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.fa-xmark {
+  display: none;
+}
+
 /* NAVIGATION */
 .nav {
   display: flex;
@@ -130,13 +151,18 @@ img {
 .nav.sticky {
   position: fixed;
   background-color: rgba(209, 215, 224, 0.85);
-  min-width: 110%;
+  min-width: 105%;
   padding: 0 9.2rem;
 }
 
 .nav__logo {
   height: 4.5rem;
   transition: all 0.3s;
+}
+
+.nav__logo:hover {
+  transform:translateX(20px);
+  cursor: pointer;
 }
 
 .nav__links {
@@ -181,6 +207,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  
 }
 
 .header__title {
@@ -230,14 +258,30 @@ h4 {
   opacity: 0.7;
   transform: scale(1.07, 1.05) skewX(-15deg);
   background-image: var(--gradient-primary);
+  animation-name: highlight;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes highlight {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
 }
 
 /* FEATURES */
-.features {
+.features-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin: 0 12rem;
+  margin: 0 8rem;
+  order: 2;
 }
 
 .features__img {
@@ -572,6 +616,9 @@ h4 {
   color: #eee;
   text-decoration: none;
 }
+.footer__link:hover {
+  color:#687864;
+}
 
 .footer__logo {
   height: 5rem;
@@ -604,6 +651,7 @@ h4 {
   transition: all 0.5s;
 }
 
+-webkit-backdrop-filter,
 .overlay {
   position: fixed;
   top: 0;
