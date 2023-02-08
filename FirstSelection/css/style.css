@@ -32,15 +32,9 @@ body {
   line-height: 1.9;
   background-color: #e9f1fa;
   overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
   position: relative;
 }
+
 
 /* GENERAL ELEMENTS */
 .section {
@@ -97,7 +91,7 @@ header {
   background: none;
   font-size: 2rem;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--color-primary);
   border: none;
@@ -112,13 +106,12 @@ header {
   cursor: pointer;
 }
 
-p {
-  color: #666;
+button {
+  color: #000;
 }
 
-/* This is BAD for accessibility! Don't do in the real world! */
-button:focus {
-  outline: none;
+p {
+  color: #666;
 }
 
 img {
@@ -520,7 +513,7 @@ h4 {
 
 /* TESTIMONIALS */
 .testimonial {
-  width: 65%;
+  width: 80%;
   position: relative;
 }
 
@@ -584,7 +577,7 @@ h4 {
   border-top: none;
   border-bottom: 1px solid #444;
   text-align: center;
-  padding: 10rem 3rem;
+  padding: 10rem;
 }
 
 .section--sign-up .section__header {
@@ -603,7 +596,7 @@ h4 {
 
 /* FOOTER */
 .footer {
-  padding: 10rem 3rem;
+  padding: 10rem;
   background-color: #37383d;
 }
 

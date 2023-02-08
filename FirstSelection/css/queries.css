@@ -93,6 +93,7 @@
   html {
     font-size: 50%;
   }
+ 
   /* Mobile Navigation */
   .btn-mobile-nav {
     display: block;
@@ -140,7 +141,6 @@
   .nav-open .fa-bars {
     display: none;
   }
- 
   .nav__link:link, .nav__link:visited {
     font-size: 3rem;
   }
@@ -233,10 +233,17 @@
     }
     .nav {
       min-width: 115%;
-      padding: 0 8rem;
+      padding: 0 7.5rem;
     }
     .nav-sticky {
       min-width: 115%;
+      padding: 0 7rem;
+    }
+    .footer {
+      padding: 10rem 0;
+    }
+    .footer__nav {
+      margin-left: 4rem
     }
   }
 
@@ -260,7 +267,7 @@
     margin: 0 auto;
   }
   .btn {
-    padding: .5rem .25rem;
+    padding: .5rem .75rem;
   }
   .features__feature {
     font-size: 1.5rem;
@@ -269,10 +276,28 @@
   }
   .nav {
     min-width: 115%;
-    padding: 0 7rem;
+    padding: 0 6rem;
   }
   .nav-sticky {
     min-width: 115%;
+    padding: 0 4rem;
+  }
+  .footer {
+    padding: 4rem;
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3.5rem;
+  }
+  .footer__logo {
+    margin-bottom: 6.5rem;
+  }
+  .section--sign-up {
+    padding: 8rem;
   }
 }
 
@@ -292,5 +317,13 @@
   }
   .btn {
     padding: .75rem 1rem;
+  }
+  .nav {
+    min-width: 115%;
+    padding: 0 6rem;
+  }
+  .nav-sticky {
+    min-width: 115%;
+    padding: 0 6rem;
   }
 }
