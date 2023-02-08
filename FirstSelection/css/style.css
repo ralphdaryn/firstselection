@@ -480,7 +480,7 @@ h4 {
 
 .dots {
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -497,8 +497,6 @@ h4 {
   cursor: pointer;
   transition: all 0.5s;
 
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -506,14 +504,13 @@ h4 {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
   background-color: #888;
   opacity: 1;
 }
 
 /* TESTIMONIALS */
 .testimonial {
-  width: 80%;
+  width: 75%;
   position: relative;
 }
 
