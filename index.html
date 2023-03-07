@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/19cb3d8b49.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css">
+
+    <!-- Head Title -->
+    <title>First Selection | We bring auto repair to you</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Navigation Bar -->
+      <nav class="nav">
+        <a href ="#"><img src="img/fslogo.png" alt="fslogo" class="nav__logo" id="logo" ></a>
+        <nav class="nav-container">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Service</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Reviews</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href=""
+              >Book Now!</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+          <!-- Mobile Navigation -->
+          <button class="btn-mobile-nav">
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <i class="fa-solid fa-xmark fa-2x"></i>
+          </button>
+        </nav>
+       
+
+      <!-- Hero Section -->
+      <div class="header__title">
+        <h1>
+          We Bring
+          <!-- Highlight effect -->
+          <span class="highlight">Auto Repair</span>
+          <br />To
+          <span class="highlight">Your Home</span>
+        </h1>
+        <h4>Redefine the service for your car.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img src="/img/hero1.jpg" class="header__img" alt="hero1" />
+      </div>
+
+   
+    </header>
+
+    <!-- About Us Section -->
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About Us</h2>
+        <h3 class="section__header">
+          Try us once, you'll never go anywhere again.
+        </h3>
+      </div>
+
+      <div class="features">
+        <div class="features-container">
+        <img
+          src="img/pic1.jpg"
+          data-src="img/pic1.jpg"
+          alt="pic1"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg
+              fill="#000000"
+              width="800px"
+              height="800px"
+              viewBox="0 0 512 512"
+              version="1.1"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g id="_x37_21-_gear__x2C__setting__x2C_engine__x2C_">
+                <g>
+                  <g>
+                    <path
+                      d="M283.693,492.847H229.26c-14.972,0-27.153-12.177-27.153-27.144v-53.9c-19.271-6.774-37.417-17.271-52.977-30.643     l-46.764,26.991c-4.106,2.361-8.772,3.605-13.503,3.606c-9.703,0-18.727-5.173-23.55-13.5l-27.237-47.184     c-7.457-12.935-3.004-29.55,9.925-37.04l46.741-26.958c-1.903-10.071-2.867-20.341-2.867-30.6c0-10.258,0.963-20.527,2.867-30.6     l-46.73-26.95c-12.972-7.516-17.423-24.157-9.933-37.104l27.23-47.121c4.835-8.347,13.859-13.527,23.553-13.527     c4.743,0,9.417,1.257,13.517,3.635l46.754,26.946c15.576-13.353,33.724-23.837,52.974-30.604v-53.9     c0-14.968,12.181-27.145,27.153-27.145h54.434c14.974,0,27.155,12.177,27.155,27.145v53.899     c19.343,6.793,37.492,17.274,52.983,30.6l46.761-26.951c4.095-2.369,8.77-3.625,13.51-3.625c9.693,0,18.708,5.185,23.524,13.531     l27.25,47.118c7.477,12.977,3.021,29.615-9.928,37.1l-46.738,26.955c1.89,10.021,2.846,20.291,2.846,30.599     c0,10.388-0.953,20.659-2.839,30.603l46.726,26.948c6.236,3.572,10.721,9.399,12.611,16.398     c1.898,7.03,0.949,14.362-2.674,20.646l-27.233,47.178c-4.827,8.335-13.847,13.508-23.544,13.509     c-4.729,0-9.396-1.244-13.499-3.597l-46.775-27c-15.553,13.379-33.701,23.863-52.98,30.605v53.937     C310.849,480.67,298.667,492.847,283.693,492.847z M149.959,366.227c1.636,0,3.259,0.598,4.526,1.756     c16.143,14.748,35.631,26.02,56.358,32.597c2.787,0.885,4.68,3.472,4.68,6.395v58.729c0,7.569,6.162,13.728,13.736,13.728h54.434     c7.576,0,13.738-6.158,13.738-13.728v-58.774c0-2.928,1.899-5.518,4.691-6.397c20.731-6.537,40.215-17.791,56.344-32.546     c2.159-1.974,5.348-2.323,7.882-0.86l50.947,29.407c2.058,1.18,4.417,1.809,6.807,1.809c4.927-0.001,9.499-2.609,11.931-6.808     l27.227-47.166c1.827-3.17,2.305-6.88,1.343-10.442c-0.954-3.533-3.208-6.468-6.345-8.265l-50.938-29.378     c-2.539-1.465-3.834-4.408-3.196-7.27c2.334-10.482,3.518-21.429,3.518-32.536c0-11.004-1.185-21.955-3.521-32.55     c-0.63-2.857,0.664-5.794,3.199-7.256l50.921-29.367c6.547-3.783,8.8-12.207,5.017-18.773l-27.247-47.114     c-2.432-4.213-6.992-6.826-11.907-6.826c-2.383,0-4.734,0.632-6.8,1.827l-50.958,29.37c-2.533,1.46-5.721,1.11-7.879-0.864     c-16.047-14.687-35.533-25.941-56.354-32.548c-2.786-0.885-4.68-3.472-4.68-6.395V47.251c0-7.569-6.162-13.729-13.738-13.729     H229.26c-7.574,0-13.736,6.159-13.736,13.729v58.729c0,2.923-1.893,5.51-4.68,6.395c-20.706,6.569-40.196,17.828-56.366,32.559     c-2.157,1.967-5.339,2.311-7.867,0.854l-50.948-29.363c-2.073-1.203-4.419-1.834-6.801-1.834c-4.924,0-9.5,2.617-11.94,6.83     l-27.228,47.118c-3.789,6.55-1.531,14.97,5.033,18.772l50.909,29.36c2.535,1.462,3.83,4.398,3.2,7.256     c-2.351,10.662-3.542,21.613-3.542,32.55c0,10.938,1.192,21.889,3.542,32.55c0.63,2.857-0.665,5.794-3.199,7.256l-50.92,29.368     c-6.53,3.782-8.786,12.184-5.018,18.72l27.229,47.172c2.428,4.19,7.003,6.799,11.936,6.799c2.388,0,4.742-0.628,6.807-1.814     l50.938-29.401C147.652,366.521,148.809,366.227,149.959,366.227z"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      d="M256.491,337.764c-44.857,0-81.351-36.465-81.351-81.287c0-44.821,36.494-81.286,81.351-81.286     c44.842,0,81.323,36.465,81.323,81.286C337.814,301.299,301.333,337.764,256.491,337.764z M256.491,188.606     c-37.459,0-67.934,30.446-67.934,67.87s30.475,67.871,67.934,67.871c37.444,0,67.907-30.447,67.907-67.871     S293.936,188.606,256.491,188.606z"
+                    />
+                  </g>
+                </g>
+              </g>
+              <g id="Layer_1" />
+            </svg>
+          </div>
+          <h5 class="features__header">Expertise. Convenience. Reliability.</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              version="1.1"
+              id="svg822"
+              inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+              sodipodi:docname="speed.svg"
+            >
+              <defs id="defs816" />
+              <sodipodi:namedview
+                id="base"
+                pagecolor="#ffffff"
+                bordercolor="#666666"
+                borderopacity="1.0"
+                inkscape:pageopacity="0.0"
+                inkscape:pageshadow="2"
+                inkscape:zoom="17.866667"
+                inkscape:cx="15"
+                inkscape:cy="15"
+                inkscape:document-units="px"
+                inkscape:current-layer="layer1"
+                showgrid="true"
+                units="px"
+                inkscape:window-width="1366"
+                inkscape:window-height="705"
+                inkscape:window-x="-8"
+                inkscape:window-y="-8"
+                inkscape:window-maximized="1"
+                inkscape:lockguides="true"
+              >
+                <inkscape:grid type="xygrid" id="grid816" />
+              </sodipodi:namedview>
+              <metadata id="metadata819">
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type
+                      rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                    />
+                    <dc:title />
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <g
+                inkscape:label="Layer 1"
+                inkscape:groupmode="layer"
+                id="layer1"
+                transform="translate(0,-289.0625)"
+              >
+                <path
+                  style="
+                    opacity: 1;
+                    fill: #000000;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 10;
+                    stroke-miterlimit: 4;
+                    stroke-dasharray: none;
+                    stroke-opacity: 1;
+                  "
+                  d="m 14.703125,5.5722656 a 12,12 0 0 0 -12,12.0000004 12,12 0 0 0 0.6894531,3.964843 A 10.746539,10.746539 0 0 1 3.0976562,19.09375 10.746539,10.746539 0 0 1 13.84375,8.3476562 10.746539,10.746539 0 0 1 19.826172,10.173828 L 21.966797,8.0332031 A 12,12 0 0 0 14.703125,5.5722656 Z m 9.148437,3.6035156 c -0.25173,0.00423 -0.507325,0.1022801 -0.71875,0.28125 l -9.193359,7.7812498 c -0.422789,0.35795 -1.416166,1.411952 -0.002,2.826172 1.414471,1.41445 2.468093,0.418804 2.826172,-0.0039 l 7.783203,-9.189453 c 0.358051,-0.42275 0.391737,-1.0223328 0,-1.4140628 -0.195869,-0.19587 -0.443582,-0.285475 -0.695313,-0.28125 z m 1.84961,3.6074218 -2.021484,2.021485 A 10.746539,10.746539 0 0 1 24.585938,19 h 2.015624 a 12,12 0 0 0 0.101563,-1.427734 12,12 0 0 0 -1.001953,-4.789063 z"
+                  transform="translate(0,289.0625)"
+                  id="path4625"
+                  inkscape:connector-curvature="0"
+                />
+              </g>
+            </svg>
+          </div>
+          <h5 class="features__header">Passion. Performance. Speed.</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <img
+          src="img/pic2.jpg"
+          data-src="img/pic2.jpg"
+          alt="pic2"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/pic3.jpg"
+          data-src="img/pic3.jpg"
+          alt="pic3"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              version="1.1"
+              id="svg822"
+              inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+              sodipodi:docname="call-ringing.svg"
+            >
+              <defs id="defs816" />
+              <sodipodi:namedview
+                id="base"
+                pagecolor="#ffffff"
+                bordercolor="#666666"
+                borderopacity="1.0"
+                inkscape:pageopacity="0.0"
+                inkscape:pageshadow="2"
+                inkscape:zoom="17.833333"
+                inkscape:cx="15"
+                inkscape:cy="15.55501"
+                inkscape:document-units="px"
+                inkscape:current-layer="layer1"
+                showgrid="true"
+                units="px"
+                inkscape:window-width="1366"
+                inkscape:window-height="713"
+                inkscape:window-x="0"
+                inkscape:window-y="0"
+                inkscape:window-maximized="1"
+                showguides="false"
+              >
+                <inkscape:grid type="xygrid" id="grid816" />
+              </sodipodi:namedview>
+              <metadata id="metadata819">
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type
+                      rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                    />
+                    <dc:title></dc:title>
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <g
+                inkscape:label="Layer 1"
+                inkscape:groupmode="layer"
+                id="layer1"
+                transform="translate(0,-289.0625)"
+              >
+                <path
+                  style="
+                    opacity: 1;
+                    fill: #000000;
+                    fill-opacity: 1;
+                    stroke: none;
+                    stroke-width: 2;
+                    stroke-miterlimit: 4;
+                    stroke-dasharray: none;
+                    stroke-opacity: 1;
+                  "
+                  d="M 15 3.0820312 L 15 5.0664062 C 17.538188 5.0664062 20.077321 6.0382588 22.019531 7.9804688 C 23.961741 9.9226787 24.933593 12.46181 24.933594 15 L 26.917969 15 C 26.917969 11.94578 25.757953 8.8907663 23.433594 6.5664062 C 21.109235 4.2420462 18.054221 3.0820312 15 3.0820312 z M 8.2207031 5.3925781 L 6.0957031 8.4277344 C 6.4302028 10.726144 8.6753669 14.333569 12.097656 17.755859 C 15.665537 21.323739 19.436115 23.611832 21.712891 23.789062 L 24.597656 21.769531 L 20.488281 17.660156 L 19.78125 18.367188 C 18.767131 19.381307 15.860591 18.661373 13.613281 16.414062 C 11.36597 14.166753 10.653849 11.268026 11.667969 10.253906 L 12.375 9.546875 L 8.2207031 5.3925781 z M 15 7.0058594 L 15 8.9921875 C 16.53344 8.9921875 18.066427 9.5820525 19.242188 10.757812 C 20.417946 11.933573 21.007812 13.46656 21.007812 15 L 22.994141 15 C 22.994141 12.95052 22.214158 10.90166 20.65625 9.34375 C 19.098342 7.78584 17.049472 7.0058594 15 7.0058594 z "
+                  transform="translate(0,289.0625)"
+                  id="rect818"
+                />
+              </g>
+            </svg>
+          </div>
+          <h5 class="features__header">Free estimates. Friendly service.</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Service</h2>
+        <h3 class="section__header">
+          Reliability and Quality Service Comes Standard.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
+            <span>01</span>Book an Appointment
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Mechanic Will Arrive With Equipment
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Money Back Gurantee!
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg
+              width="800px"
+              height="800px"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--twemoji"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                fill="#FFAC33"
+                d="M5.123 5h6C12.227 5 13 4.896 13 6V4c0-1.104-.773-2-1.877-2h-8c-2 0-3.583 2.125-3 5c0 0 1.791 9.375 1.917 9.958C2.373 18.5 4.164 20 6.081 20h6.958c1.105 0-.039-1.896-.039-3v-2c0 1.104-.773 2-1.877 2h-4c-1.104 0-1.833-1.042-2-2S3.539 7.667 3.539 7.667C3.206 5.75 4.018 5 5.123 5zm25.812 0h-6C23.831 5 22 4.896 22 6V4c0-1.104 1.831-2 2.935-2h8c2 0 3.584 2.125 3 5c0 0-1.633 9.419-1.771 10c-.354 1.5-2.042 3-4 3h-7.146C21.914 20 22 18.104 22 17v-2c0 1.104 1.831 2 2.935 2h4c1.104 0 1.834-1.042 2-2s1.584-7.333 1.584-7.333C32.851 5.75 32.04 5 30.935 5zM20.832 22c0-6.958-2.709 0-2.709 0s-3-6.958-3 0s-3.291 10-3.291 10h12.292c-.001 0-3.292-3.042-3.292-10z"
+              ></path>
+              <path
+                fill="#FFCC4D"
+                d="M29.123 6.577c0 6.775-6.77 18.192-11 18.192c-4.231 0-11-11.417-11-18.192c0-5.195 1-6.319 3-6.319c1.374 0 6.025-.027 8-.027l7-.001c2.917-.001 4 .684 4 6.347z"
+              ></path>
+              <path
+                fill="#C1694F"
+                d="M27 33c0 1.104.227 2-.877 2h-16C9.018 35 9 34.104 9 33v-1c0-1.104 1.164-2 2.206-2h13.917c1.042 0 1.877.896 1.877 2v1z"
+              ></path>
+              <path
+                fill="#C1694F"
+                d="M29 34.625c0 .76.165 1.375-1.252 1.375H8.498C7.206 36 7 35.385 7 34.625v-.25C7 33.615 7.738 33 8.498 33h19.25c.759 0 1.252.615 1.252 1.375v.25z"
+              ></path>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Schedule an appointment, it takes less than a minute!
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg
+              fill="#000000"
+              width="800px"
+              height="800px"
+              viewBox="0 0 50 50"
+              version="1.2"
+              baseProfile="tiny"
+              xmlns="http://www.w3.org/2000/svg"
+              overflow="inherit"
+            >
+              <path
+                d="M21.434 7.689l-2.434 3.311h-5.684c.701 2 2.996 3.886 6.201 3.26.95-.064 4.155-.573 5.483-.26 1.768.424 1.031.426 4.201 2.97l15.799 13.03c.968.855 2.206.505 3.063-.461.857-.968.905-2.684-.063-3.539l-20-16c-1.252-1.005-1.568-2.397-2-4-.84-2.755-3.929-4.965-6.961-4.965-2.443 0-5.072 2.113-6.039 3.965h6l2.434 2.689zm13.72 24.311l-6.182-10.73c-.244-.445-.861-1.27-1.368-1.27h-17.208c-.507 0-1.124.825-1.369 1.27l-6.027 10.73h-.154c-1.015 0-1.846.369-1.846 1.385v9.23c0 1.016.831 1.385 1.846 1.385h2.154v3.23c0 1.524.938 2.77 2.461 2.77h.923c1.524 0 2.616-1.246 2.616-2.77v-3.23h16v3.23c0 1.523 1.092 2.77 2.615 2.77h.923c1.524 0 2.462-1.246 2.462-2.77v-3.23h2.154c1.015 0 1.846-.369 1.846-1.385v-9.23c0-1.016-.831-1.385-1.846-1.385zm-29.077 6.923c-1.275 0-2.308-1.033-2.308-2.308s1.033-2.308 2.308-2.308c1.274 0 2.308 1.033 2.308 2.308s-1.033 2.308-2.308 2.308zm1.846-6.923l3.741-7.828c.227-.454.829-1.172 1.336-1.172h12c.507 0 1.108.718 1.336 1.172l3.741 7.828h-22.154zm24 6.923c-1.274 0-2.308-1.033-2.308-2.308s1.033-2.308 2.308-2.308 2.308 1.033 2.308 2.308-1.034 2.308-2.308 2.308z"
+              />
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            North America's Most Trusted Auto Repair Experts.
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg
+              fill="#000000"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="800px"
+              height="800px"
+              viewBox="0 0 478.248 478.248"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M456.02,44.821H264.83c-12.26,0-22.232,9.972-22.232,22.229v98.652c0,12.258,9.974,22.23,22.232,22.23h16.787v39.161
+				c0,2.707,1.58,5.165,4.043,6.292c0.92,0.42,1.901,0.627,2.875,0.627c1.631,0,3.244-0.576,4.523-1.685l51.383-44.396h111.576
+				c12.26,0,22.23-9.973,22.23-22.23V67.05C478.25,54.792,468.277,44.821,456.02,44.821z M319.922,112.252l-10.209,9.953
+				l2.41,14.054c0.174,1.015-0.242,2.038-1.076,2.643c-0.469,0.342-1.027,0.516-1.588,0.516c-0.428,0-0.861-0.103-1.256-0.31
+				l-12.621-6.635l-12.619,6.635c-0.912,0.478-2.016,0.398-2.848-0.206s-1.248-1.628-1.074-2.643l2.41-14.054l-10.211-9.953
+				c-0.734-0.718-1.002-1.792-0.685-2.769c0.317-0.978,1.164-1.691,2.183-1.839l14.11-2.05l6.31-12.786
+				c0.457-0.923,1.396-1.507,2.424-1.507s1.969,0.584,2.422,1.507l6.312,12.786l14.107,2.05c1.02,0.148,1.863,0.861,2.184,1.839
+				C320.924,110.46,320.658,111.535,319.922,112.252z M384.766,112.252l-10.211,9.953l2.412,14.054
+				c0.172,1.015-0.244,2.038-1.076,2.643c-0.469,0.342-1.025,0.516-1.588,0.516c-0.43,0-0.859-0.103-1.26-0.31l-12.619-6.635
+				l-12.619,6.635c-0.912,0.478-2.014,0.398-2.846-0.206c-0.834-0.604-1.25-1.628-1.076-2.643l2.41-14.054l-10.209-9.953
+				c-0.734-0.718-1.002-1.792-0.684-2.769c0.316-0.978,1.16-1.691,2.182-1.839l14.109-2.05l6.311-12.786
+				c0.455-0.923,1.396-1.507,2.422-1.507c1.029,0,1.967,0.584,2.422,1.507l6.312,12.786l14.109,2.05
+				c1.021,0.148,1.863,0.861,2.182,1.839C385.768,110.46,385.5,111.535,384.766,112.252z M449.607,112.252l-10.211,9.953
+				l2.408,14.054c0.176,1.015-0.238,2.038-1.072,2.643c-0.471,0.342-1.027,0.516-1.59,0.516c-0.43,0-0.859-0.103-1.258-0.31
+				l-12.621-6.635l-12.621,6.635c-0.908,0.478-2.012,0.398-2.844-0.206c-0.834-0.604-1.248-1.628-1.076-2.643l2.412-14.054
+				l-10.211-9.953c-0.734-0.718-1-1.792-0.684-2.769c0.316-0.978,1.164-1.691,2.182-1.839l14.111-2.05l6.311-12.786
+				c0.453-0.923,1.395-1.507,2.42-1.507c1.027,0,1.971,0.584,2.426,1.507L434,105.594l14.109,2.05
+				c1.018,0.148,1.861,0.861,2.182,1.839C450.609,110.46,450.344,111.535,449.607,112.252z"
+                    />
+                    <path
+                      d="M152.844,112.924c-46.76,0-72.639,24.231-72.166,70.921c0.686,63.947,27.859,102.74,72.166,102.063
+				c0,0,72.131,2.924,72.131-102.063C224.975,137.155,200.605,112.924,152.844,112.924z"
+                    />
+                    <path
+                      d="M280.428,334.444l-72.074-28.736l-16.877-14.223c-4.457-3.766-11.041-3.488-15.178,0.621l-23.463,23.336l-23.533-23.342
+				c-4.137-4.104-10.713-4.369-15.164-0.615l-16.881,14.223l-72.074,28.739C1.975,343.69,1.995,425.884,0,433.427h305.646
+				C303.656,425.9,303.646,343.679,280.428,334.444z"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Customer satisfaction is our number one priority!
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">What Are You Waiting For?</h2>
+        <h3 class="section__header">Let's take car servicing seriously.</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              The right choice in collision repair.
+            </h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">John Doe</h6>
+              <p class="testimonial__location">Orlando, Florida</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Professional auto service at affordable prices.
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Jane Smith</h6>
+              <p class="testimonial__location">Phoenix, Arizona</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              One-stop for all your automotive needs.
+            </h5>
+            <blockquote class="testimonial__text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Michael Hill</h6>
+              <p class="testimonial__location">Vancouver, BC</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Taking care of cars and the people who drive them.
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Book An Appointment Today!</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <a href ="#"><img src="img/footer.png" alt="Logo" class="footer__logo"></a> 
+      <p class="footer__copyright">
+        &copy; Copyright 2022 by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://ralphdaryn.netlify.app/"
+          >Ralph Cabauatan</a
+        >. Used for his portfolio.
+      </p>
+    </footer>
+
+    <!-- Modal Window -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Book An Appointment In<br />
+        Less Than
+        <span class="highlight"> 1 minute.</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
